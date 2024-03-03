@@ -1,0 +1,207 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: white;
+    overflow-x: scroll;
+    background: #000;
+    overflow-x: hidden;
+}
+#nav{
+    background: linear-gradient(to bottom,rgb(0,0,0,1),rgb(0,0,0,0));
+    height: 68px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    
+}
+    #logo{
+        background: url(https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg) no-repeat center center;
+        background-size: cover;
+        height: 23px;
+        width: 93px;
+        margin-left: 40px;
+        margin-right: 30px;
+    }
+    .nav-button{
+        font-size: 14px;
+        margin-left: 15px;
+        color: rgb(179, 179, 179);
+
+    }
+    .nav-button:hover{
+        color: rgb(116, 116, 116);
+    }
+    #right{
+        margin-left: auto;
+        margin-right: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #searchbox{
+        background:rgb(0, 0, 0,0.6);
+        height: 36px;
+        width: 275px;
+        border: 1px solid white;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-left: 5px;
+    }
+        #submit{
+            height: 36px;
+
+            border-style: none;
+            background: transparent;
+        }
+        #ser_input{
+            background: transparent;
+            height: 32px;
+            font-size: 15px;
+            margin-left: 5px;
+            color: white;
+            border: none;
+            border-style: none;
+        }
+
+    #child{
+        font-size: 14px;
+        margin-left: 15px;
+        color: rgb(179, 179, 179);
+        margin-right: 15px;
+    }
+    #login{
+        background: url(login_img.png);
+        height: 32px;
+        width: 32px;
+        margin-left: 20px;
+        border-radius: 5px;
+    }
+#movie-bg{
+    z-index: -1;
+    height: 810px;
+    position:absolute;
+    width: 100%;
+    background: url(home_bg.jpg) no-repeat center center;
+    background-size: cover;
+    margin: 0;
+}
+#movie-bg::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 810px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 90%);
+    z-index: -0.5; /* Place the gradient behind the content */
+}
+#display-movie-title{
+    width: 518px;
+    height: 400px;
+    margin-left: 40px;
+    margin-top: 0;
+    padding-top: 200px;
+}
+    #movie-logo{
+        width: 100%;
+        height: 207px;
+        background: url(home_bg_logo.png);
+        background-size: cover;
+    }
+    #movie-caption{
+        line-height: 25px;
+    }
+    #buttons{
+        height: 69px;
+    }
+        #playb{
+            height: 43px;
+            width: 119px;
+            font-size: 18px;
+            font-weight: 600;
+            border-style: none;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+
+        }
+        #moreb{
+            height: 43px;
+            width: 119px;
+            font-size: 18px;
+            font-weight: 600;
+            background: rgb(147, 147, 147,0.5);
+            border-style: none;
+            color: white;
+            border-radius: 5px;
+        }
+
+
+
+.card-title{
+    height: 26px;
+    width: 100vh;
+    font-size: 20px;
+    margin: 15px 0px 15px 40px;
+    font-weight: 300;
+}
+#card-list{
+    width: 95vw;
+    height: 280px;
+    display: flex;
+    overflow-y: hidden;
+
+    overflow-x: scroll;
+    padding-left: 40px;
+}
+.moviediv{
+    width: 200px;
+    height: 280px;
+    background-size: cover;
+    background-position:center;
+    object-fit: cover;
+    margin: 5px;
+}
+
+.outerdiv-slider{
+    width: 200px;
+    height: 280px;
+    margin-right: 15px;
+}
+#card-list2{
+    width: 95vw;
+    height: 280px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-left: 40px;
+}
+#card-list3{
+    width: 95vw;
+    height: 280px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-left: 40px;
+}
+#card-list4{
+    width: 95vw;
+    height: 280px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-left: 40px;
+}
+
+#searched{
+    padding-top: 80px;
+    height: 100vh;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.moviediv{
+
+    justify-content: space-around;
+}

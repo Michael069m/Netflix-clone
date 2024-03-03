@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <script src="home.js"></script>
+    <script src="https://kit.fontawesome.com/19bd716d99.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body bgcolor=#212121>
+    <!-- <div style="height: 400px; width: 400px; background: url(https://image.tmdb.org/t/p/w500${img}); background-position: center; object-fit: cover;"></div> -->
+    <div id="nav">
+        <div id="logo"></div>
+        <div class="nav-button" style="color: white; font-weight: 800;">Home</div>
+        <div class="nav-button">TV Shows</div>
+        <div class="nav-button">Movies</div>
+        <div class="nav-button">New & Popular</div>
+        <div class="nav-button">Browse by Languages</div>
+
+        <div id="right">
+            <div id="ser"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i></div>
+                
+            <form>
+                <div id="searchbox" style="display:none;">
+
+                        <button type="submit" id="submit"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #ffffff;"></i></button>
+                        <input  type="text" placeholder="Title" id="ser_input">
+
+                        <a href="index.html" style="margin-left: 18px;margin-right: 8px;"><i class="fa-sharp fa-solid fa-xmark fa-lg" style="color: #ffffff; margin-left: auto;"></i></a>
+                    
+                    
+                </div>
+            </form>
+            <div id="child">Children</div>
+            <div id="bell"><i class="fa-regular fa-bell fa-lg" style="color: #ffffff;"></i></div>
+            <div id="login"></div>
+        </div>
+    </div>
+    <div id="content" >
+        <div id="movie-bg"></div>
+        <div id="display-movie-title">
+            <div id="movie-logo"></div>
+            <div id="movie-caption">Reunited with Lancelot for the first time since their tragic accident, Tristan must learn to conquer his inner demons in order to save his mother's life.</div>
+            <div id="buttons">
+                <button id="playb"><i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i> Play</button>
+                <button id="moreb"><i class="fa-solid fa-circle-info"></i> More Info</button>
+            </div>
+        </div>
+        <div class="card-title">Watching Now</div>
+
+        <div id="card-list">
+            
+        </div>
+
+        <br>
+
+        <div class="card-title">Popular</div>
+
+        <div id="card-list2">
+            
+        </div>
+        <br>
+
+        <div class="card-title">Top Rated</div>
+
+        <div id="card-list3">
+            
+        </div>
+        <br>
+
+        <div class="card-title">Upcoming</div>
+
+        <div id="card-list4">
+            
+        </div>
+    </div>
+    <div id="searched" style="display: none;"></div>
+
+</body>
+</html>
